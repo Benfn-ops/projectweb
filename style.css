@@ -1,0 +1,268 @@
+/* step.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main Container */
+#main_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.header_logotype_container {
+  flex: 1;
+}
+
+.logotype_name {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.purple {
+  color: #6a1b9a;
+}
+
+.logotype_occupation {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.header_menu_container {
+  flex: 2;
+}
+
+ul.horizontal_list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left Column */
+#left_col {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  background-color: #fafafa;
+  border-right: 1px solid #ddd;
+}
+
+.profile_frame {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile_picture {
+  width: 120px;
+  height: 120px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.hello_content,
+.contact_details_content,
+.get_social_content {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #6a1b9a;
+}
+
+.send_message_button {
+  display: block;
+  background-color: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin: 20px 0;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.send_message_button:hover {
+  background-color: #8e24aa;
+}
+
+.social_icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social_icons li a {
+  font-size: 1.5em;
+  color: #6a1b9a;
+  transition: transform 0.3s;
+}
+
+.social_icons li a:hover {
+  transform: scale(1.2);
+}
+
+/* Content Container */
+#content_container {
+  margin-left: 32%;
+  padding: 20px;
+}
+
+.block {
+  margin-bottom: 30px;
+}
+
+.block h1,
+.block h2 {
+  border-bottom: 2px solid #6a1b9a;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.profile_quote {
+  font-style: italic;
+  border-left: 5px solid #6a1b9a;
+  padding-left: 15px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.horizontal_line {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.line_left,
+.line_right {
+  flex: 1;
+  height: 2px;
+  background: #ddd;
+}
+
+.central_circle,
+.left_circle,
+.right_circle {
+  width: 12px;
+  height: 12px;
+  background-color: #6a1b9a;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Portfolio */
+.portfolio_gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.portfolio_item {
+  width: 30%;
+  min-width: 200px;
+  text-align: center;
+}
+
+.portfolio_item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio_item img:hover {
+  transform: scale(1.05);
+}
+
+/* Education Section */
+#education table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#education th,
+#education td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+#education th {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: bold;
+}
+
+#education tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+#education tbody tr:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #left_col {
+    float: none;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #content_container {
+    margin-left: 0;
+  }
+
+  .horizontal_list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
